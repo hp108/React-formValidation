@@ -7,6 +7,8 @@
   .users ul {
     list-style: none;
     padding: 1rem;
+    width: 100%;
+    text-align: center;
   }
   
   .users li {
@@ -15,4 +17,5 @@
     margin: 0.5rem 0;
     margin-bottom: 0.6rem;
     padding: 0.6rem;
+    
   }

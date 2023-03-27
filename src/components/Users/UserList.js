@@ -13,10 +13,15 @@ function UserList(props) {
                    {user.name} is ({user.age} years old) 
                 </li> )
             })}
-
-
         </ul>
     </Card>}
+    {props.user.length === 0 && <Card style={styles.users}>
+      <ul>
+            <li>No users Found</li>
+
+      </ul>
+      
+      </Card>}
    </div>
     
   )
