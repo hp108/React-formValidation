@@ -4,7 +4,8 @@ import styles from './UserList.module.css'
 
 function UserList(props) {
   return (
-    <Card style={styles.users}  >
+<div>
+  {props.user.length >0 && <Card style={styles.users}  >
         <ul>
             {props.user.map(user=>{
                 return(
@@ -15,14 +16,9 @@ function UserList(props) {
 
 
         </ul>
-
-
-
-
-
-
-
-    </Card>
+    </Card>}
+   </div>
+    
   )
 }
 
